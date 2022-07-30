@@ -106,12 +106,12 @@ Loop  ; For each mixer number that exists in the system, query its capabilities.
 	SoundGet, master_mute, , mute, %MuteThisDevice%
 	if (master_mute = "On") {
 		Loop, 12 {
-			KeyboardLED(4, "On", A_Index-1)
+			KeyboardLED(1, "On", A_Index-1)
 		}
 	
 	} else {
 		Loop, 12 {
-			KeyboardLED(4, "Off", A_Index-1)
+			KeyboardLED(1, "Off", A_Index-1)
 		}
 		
 	}
